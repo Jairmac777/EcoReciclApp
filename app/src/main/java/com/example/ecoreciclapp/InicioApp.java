@@ -3,10 +3,7 @@ package com.example.ecoreciclapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,7 +14,7 @@ public class InicioApp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_app);
 
-        ImageView botonIngresar = findViewById(R.id.ingresar);
+        ImageView botonIngresar = findViewById(R.id.registrate);
 
         botonIngresar.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/botonIngresar"
+        android:id="@+id/ingresa"
         android:layout_width="344dp"
         android:layout_height="57dp"
         android:layout_marginTop="36dp"
@@ -54,11 +54,11 @@
         android:backgroundTint="#E66161"
         android:backgroundTintMode="screen"
         android:freezesText="false"
-        android:text="Ingresar"
+        android:text="Ingresa"
         android:textColorLink="#E66161"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/checkedTextView"
+        app:layout_constraintBottom_toTopOf="@+id/registrate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
@@ -141,17 +141,17 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/checkedTextView"
+        app:layout_constraintEnd_toStartOf="@+id/registrate"
         app:layout_constraintHorizontal_bias="0.785"
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckedTextView
-        android:id="@+id/checkedTextView"
+        android:id="@+id/registrate"
         android:layout_width="148dp"
         android:layout_height="37dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="116dp"
-        android:text="Registrarse"
+        android:text="Registrate"
         android:textAlignment="center"
         android:textColor="#E66161"
         android:textSize="20sp"
