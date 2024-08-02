@@ -1,9 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.EcoReciclApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.ecoReciclApp" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryVariant">@color/button_background</item>"
     </style>
 
-    <style name="Theme.EcoReciclApp" parent="Base.Theme.EcoReciclApp" />
+    <style name="Theme.ecoReciclApp" parent="Base.Theme.ecoReciclApp" />
 </resources>

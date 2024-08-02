@@ -125,7 +125,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ver Reportes"
-        android:background="@android:color/holo_green_dark"
+        android:background="@drawable/button_tip"
         android:textColor="@android:color/white"
         android:layout_marginTop="16dp"/>
 
@@ -133,6 +133,6 @@
         android:id="@+id/salir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/green"
+        android:background="@drawable/button_tip"
         android:text="Salir" />
 </LinearLayout>

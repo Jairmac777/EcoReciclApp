@@ -7,163 +7,344 @@
     android:layout_height="match_parent"
     tools:context=".Registrarse">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="336dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="28dp"
-        android:text="Registrarse"
-        android:textAlignment="viewStart"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.213"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="135dp"
-        android:layout_height="29dp"
-        android:layout_marginBottom="12dp"
-        android:text="Correo"
-        android:textColor="#E66161"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.232"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/architects_daughter"
+            android:text="Registrarse"
+            android:textAlignment="center"
+            android:textColor="@color/button_background"
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="278dp"
-        android:layout_height="49dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:hint="ejemplo@correo.com"
-        android:inputType="textEmailAddress"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.232"
-        app:layout_constraintStart_toStartOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="122dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="4dp"
-        android:text="Contraseña"
-        android:textColor="#E66161"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.232"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Nombres"
+                android:textSize="18sp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="278dp"
-        android:layout_height="49dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:hint="*****************"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/terminos"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.695"
-        app:layout_constraintStart_toStartOf="parent" />
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/architects_daughter"
+                android:hint="Nombres"
+                android:inputType="text"/>
+        </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="61dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/terminos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ojo" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
 
-    <CheckBox
-        android:id="@+id/checkBox2"
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Apellidos"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:textColor="@color/red" />
+
+            <EditText
+                android:id="@+id/editTextText2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:fontFamily="@font/architects_daughter"
+                android:hint="Apellidos"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Celular"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:textColor="@color/red" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/architects_daughter"
+                android:hint="1234567890"
+                android:inputType="phone"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Correo"
+                android:textAlignment="textEnd"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/architects_daughter"
+                android:hint="ejemplo@correo.com"
+                android:textSize="18sp"
+                android:inputType="textEmailAddress"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Contraseña"
+                android:textAlignment="textEnd"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="30dp">
+
+                <EditText
+                    android:id="@+id/editTextTextPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/architects_daughter"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/PasswordNoVisibility"
+                    android:layout_width="61dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/baseline_visibility_off_24" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Confirmar Contraseña"
+                android:textAlignment="textEnd"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="224dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="30dp">
+
+                <EditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/architects_daughter"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/passwordVisibilityOff"
+                    android:layout_width="61dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/baseline_visibility_off_24" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp" />
+
+            <TextView
+                android:id="@+id/terminos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Acepto los Términos de Servicio y Política de Privacidad"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/registrar"
+                android:layout_width="100dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_tip"
+                android:backgroundTint="@color/button_background"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Registrar"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/continuar"
+                android:layout_width="100dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:background="@drawable/button_tip"
+                android:backgroundTint="@color/button_background"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Continuar"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="222dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/architects_daughter"
+                android:hint="Tiene una Cuenta?"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <CheckedTextView
+                android:id="@+id/ingresar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Ingresar"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="355dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="222dp"
+                app:srcCompat="@drawable/logo2" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/continuar"
-        app:layout_constraintEnd_toStartOf="@+id/terminos"
-        app:layout_constraintHorizontal_bias="0.584"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/terminos"
-        android:layout_width="278dp"
-        android:layout_height="43dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="20dp"
-        android:text="Acepto los Términos de Servicio y Política de Privacidad"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/continuar"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/continuar"
-        android:layout_width="350dp"
-        android:layout_height="61dp"
-        android:layout_marginBottom="36dp"
-        android:background="#E66161"
-        android:freezesText="false"
-        android:text="Continuar"
-        android:textColorLink="#E66161"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="170dp"
-        android:layout_height="37dp"
-        android:layout_marginBottom="28dp"
-        android:hint="Tiene una Cuenta?"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintEnd_toStartOf="@+id/ingresar"
-        app:layout_constraintHorizontal_bias="0.695"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <CheckedTextView
-        android:id="@+id/ingresar"
-        android:layout_width="151dp"
-        android:layout_height="36dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="28dp"
-        android:text="Ingresar"
-        android:textAlignment="center"
-        android:textColor="#E66161"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="347dp"
-        android:layout_height="181dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo2" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="224dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

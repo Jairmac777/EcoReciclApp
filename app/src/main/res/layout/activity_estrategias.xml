@@ -30,6 +30,7 @@
         android:id="@+id/btn_regresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_tip"
         android:text="Regresar"
         app:iconPadding="18dp" />
 
