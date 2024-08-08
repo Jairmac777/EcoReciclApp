@@ -16,9 +16,9 @@ public class Estrategias extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_estrategias);
 
-        String[] strategies = {"Reciclaje de alimentos", "Reciclaje de orgánico", "Reciclaje de documentos",
-                "Reciclaje de alimentos", "Separar elementos", "Crear campañas de reciclaje",
-                "Grupos eco ambientales", "Cifras históricas", "Cómo monetizar el reciclaje"};
+        String[] strategies = {"Grupos para reciclaje orgánico", "Grupos para reciclaje de papel",
+                "Grupos para reciclaje de cartón", "Grupos para reciclaje de plástico", "Grupos para reciclaje de metal",
+                "Grupos para reciclaje de vidrio", "Grupos Ecoambientales", "Cifras históricas", "Cómo monetizar el reciclaje"};
 
         ListView listView = findViewById(R.id.listView);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, strategies);

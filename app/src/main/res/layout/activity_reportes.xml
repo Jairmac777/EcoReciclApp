@@ -1,50 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@android:color/white">
+    android:background="@android:color/white">-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reportes">
 
-    <TextView
-        android:id="@+id/reportes"
+    <!--<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="start"
         android:layout_marginTop="8dp"
-        android:text="Reportes"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/architects_daughter"
         android:text="Reporte de reciclaje"
+        android:textColor="@color/red"
         android:textSize="16sp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"/>
+        android:textStyle="bold" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="3">
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center"
             android:text="Semana Pasada"
-            android:gravity="center"/>
+            android:textColor="@color/button_background"
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center"
             android:text="Semana Actual"
-            android:gravity="center"/>
+            android:textColor="@color/button_background"
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center"
             android:text="Próxima semana"
-            android:gravity="center"/>
+            android:textColor="@color/button_background"
+            android:textStyle="bold" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -59,13 +72,14 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/architects_daughter"
+                android:gravity="center"
                 android:text="64%"
-                android:textColor="@android:color/holo_green_light"
-                android:textSize="24sp"
-                android:gravity="center"/>
+                android:textSize="24sp" />
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -77,13 +91,14 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/architects_daughter"
+                android:gravity="center"
                 android:text="40%"
-                android:textColor="@android:color/holo_red_light"
-                android:textSize="24sp"
-                android:gravity="center"/>
+                android:textSize="24sp" />
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -95,44 +110,96 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/architects_daughter"
+                android:gravity="center"
                 android:text="90%"
-                android:textColor="@android:color/holo_blue_light"
-                android:textSize="24sp"
-                android:gravity="center"/>
+                android:textSize="24sp" />
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/img3"/>
         </LinearLayout>
     </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/architects_daughter"
         android:text="Diagrama de progreso mensual"
+        android:textColor="@color/red"
         android:textSize="16sp"
-        android:layout_marginBottom="16dp"/>
-    <ImageView
+        android:textStyle="bold" />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/reportes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Estadísticas"
+                android:textAlignment="center"
+                android:textColor="@color/button_background"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/graficoBarras"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="308dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/graficoLineas"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="32dp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/graficoTorta"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="32dp" />
+
+            <Button
+                android:id="@+id/salir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_tip"
+                android:fontFamily="@font/architects_daughter"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="REGRESAR"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:src="@drawable/img4"
         android:scaleType="fitCenter"
-        android:layout_marginBottom="16dp"/>
-    <Button
-        android:id="@+id/btn_reportes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ver Reportes"
-        android:background="@drawable/button_tip"
-        android:textColor="@android:color/white"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginBottom="16dp"/>-->
 
-    <Button
-        android:id="@+id/salir"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_tip"
-        android:text="Salir" />
-</LinearLayout>
+    <!--</LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

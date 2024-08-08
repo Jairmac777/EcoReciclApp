@@ -9,12 +9,14 @@
 
     <TextView
         android:id="@+id/estrategias"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Estrategias"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="18sp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Grupos de Reciclaje"
+        android:textAlignment="center"
+        android:textColor="@color/button_background"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <EditText
@@ -22,17 +24,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Buscar"
+        android:fontFamily="@font/architects_daughter"
         android:drawableStart="@android:drawable/ic_menu_search"
-        android:padding="10dp"
+        android:padding="18dp"
         android:background="@android:drawable/editbox_background"/>
-
-    <Button
-        android:id="@+id/btn_regresar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_tip"
-        android:text="Regresar"
-        app:iconPadding="18dp" />
 
     <ListView
         android:id="@+id/listView"
@@ -40,8 +35,24 @@
         android:layout_height="449dp"
         android:layout_marginTop="16dp"
         android:divider="@android:color/darker_gray"
+        android:fontFamily="@font/architects_daughter"
+        android:textColor="@color/button_background"
         android:dividerHeight="1dp">
 
     </ListView>
+
+    <Button
+        android:id="@+id/btn_regresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_tip"
+        android:fontFamily="@font/architects_daughter"
+        android:padding="16dp"
+        android:text="Regresar"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:iconPadding="18dp" />
 
 </LinearLayout>

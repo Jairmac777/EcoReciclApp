@@ -42,14 +42,16 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/nombres"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="30dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:fontFamily="@font/architects_daughter"
+                android:textStyle="bold"
                 android:hint="Nombres"
+                android:textSize="18sp"
                 android:inputType="text"/>
         </LinearLayout>
 
@@ -71,7 +73,7 @@
                 android:textColor="@color/red" />
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/apellidos"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -102,7 +104,7 @@
                 android:textColor="@color/red" />
 
             <EditText
-                android:id="@+id/editTextPhone"
+                android:id="@+id/celular"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="30dp"
@@ -132,7 +134,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextEmailAddress"
+                android:id="@+id/correo"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="30dp"
@@ -168,19 +170,20 @@
                 android:layout_marginEnd="30dp">
 
                 <EditText
-                    android:id="@+id/editTextTextPassword"
+                    android:id="@+id/contrasena"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:ems="10"
                     android:fontFamily="@font/architects_daughter"
                     android:hint="Contraseña"
+                    android:textSize="18sp"
                     android:inputType="textPassword"
                     android:textAlignment="textStart"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
                 <ImageButton
-                    android:id="@+id/PasswordNoVisibility"
+                    android:id="@+id/passwordNoVisibility"
                     android:layout_width="61dp"
                     android:layout_height="match_parent"
                     android:layout_alignParentRight="true"
@@ -204,6 +207,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/architects_daughter"
                 android:text="Confirmar Contraseña"
+                android:layout_marginStart="30dp"
                 android:textAlignment="textEnd"
                 android:textColor="@color/red"
                 android:textSize="18sp"
@@ -215,12 +219,13 @@
                 android:layout_marginEnd="30dp">
 
                 <EditText
-                    android:id="@+id/editPassword"
+                    android:id="@+id/confirmarContrasena"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:ems="10"
                     android:fontFamily="@font/architects_daughter"
                     android:hint="Contraseña"
+                    android:textSize="18sp"
                     android:inputType="textPassword"
                     android:textAlignment="textStart"
                     android:textColor="@color/black"
@@ -237,6 +242,16 @@
 
             </RelativeLayout>
         </LinearLayout>
+        <TextView
+            android:id="@+id/errores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="8sp"
+            android:padding="5dp"
+            android:text="Errores"
+            android:textColor="#B71C1C"
+            android:visibility="gone" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -269,9 +284,10 @@
 
             <Button
                 android:id="@+id/registrar"
-                android:layout_width="100dp"
+                android:layout_width="140dp"
                 android:layout_height="61dp"
-                android:layout_marginStart="100dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="10dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/button_tip"
                 android:backgroundTint="@color/button_background"
@@ -279,51 +295,23 @@
                 android:text="Registrar"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/continuar"
-                android:layout_width="100dp"
+                android:layout_width="140dp"
                 android:layout_height="61dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginStart="50dp"
                 android:background="@drawable/button_tip"
                 android:backgroundTint="@color/button_background"
                 android:fontFamily="@font/architects_daughter"
                 android:text="Continuar"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="222dp"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/architects_daughter"
-                android:hint="Tiene una Cuenta?"
-                android:textAlignment="textEnd"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <CheckedTextView
-                android:id="@+id/ingresar"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/architects_daughter"
-                android:text="Ingresar"
-                android:textAlignment="center"
-                android:textColor="@color/red"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
         </LinearLayout>
 
         <LinearLayout
