@@ -17,8 +17,10 @@ Beneficios Clave:
 Eficiencia Operativa: Optimiza los procesos de recolección y manejo de desechos, reduciendo costos y mejorando la clasificación de residuos.
 Reducción de Impacto Ambiental: Promueve prácticas de reciclaje y reducción de residuos, contribuyendo a la sostenibilidad del medio ambiente.
 Mayor Participación y Conciencia: Involucra a los usuarios en la gestión de residuos, fomentando comportamientos responsables y creando una experiencia más ecológica.
+
 El digrama de vistas de la aplicación y su ciclo de vida se muestran a continuación:
 ![image](https://github.com/user-attachments/assets/ffb59873-b55a-4120-a313-c8fde5b05a44)
+
 Y el diagrama de clases desarrollado para la funcionalidad de la aplicación es el siguiente:
 ![image](https://github.com/user-attachments/assets/124a0579-764f-4ac3-9d73-e64dffa45b0a)
 
